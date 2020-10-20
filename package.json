@@ -1,0 +1,155 @@
+{
+	"name": "whitespacepp",
+	"version": "1.0.0",
+    "publisher": "chihiro718",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"displayName": "Whitespace++",
+	"description": "Customize characters and colors of whitespaces",
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"whitespace",
+		"highlight"
+	],
+	"activationEvents": [
+        "*"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chihiro718/whitespacepp.git"
+	},
+	"main": "./extension.js",
+	"contributes": {
+		"configuration": {
+			"title": "Whitespace++",
+			"properties": {
+				"whitespacepp.renderTAB": {
+					"type": "boolean",
+					"default": true,
+					"description": "Check here to render TAB (\\t) characters."
+				},
+				"whitespacepp.renderWS": {
+					"type": "boolean",
+					"default": true,
+					"description": "Check here to render Wide Space characters."
+				},
+				"whitespacepp.renderLF": {
+					"type": "boolean",
+					"default": true,
+					"description": "Check here to render Line Feed (\\n) character."
+				},
+				"whitespacepp.renderEOF": {
+					"type": "boolean",
+					"default": true,
+					"description": "Check here to render [EOF] marker at the end of the file."
+				},
+
+				"whitespacepp.textTAB": {
+					"type": "string",
+					"default": "›",
+					"description": "Text for TAB (\\t). It's recommended that you specify 1em size characters, and you can also specify Unicode characters such as \"￫\", \"‣\", \"▸\", \"▹\", \"❯\"."
+				},
+				"whitespacepp.textWS": {
+					"type": "string",
+					"default": "□",
+					"description": "Text for Wide Space. It's recommended that you specify 2em size characters, and you can also specify Unicode characters such as \"▢\", \"◌\", \"▨\", \"▒\", \"🔲\"."
+				},
+				"whitespacepp.textLF": {
+					"type": "string",
+					"default": "↵",
+					"description": "Text for Line Feed (\\n). You can also specify Unicode characters such as \"↩\", \"◂\", \"▾\"."
+				},
+				"whitespacepp.textEOF": {
+					"type": "string",
+					"default": "[EOF]",
+					"description": "Text for EOF (End of File). You can also specify Unicode characters."
+				},
+
+				"whitespacepp.foreColorTAB": {
+					"type": "string",
+					"default": "#3a3a3a",
+					"description": "Text color for TAB (\\t)."
+				},
+				"whitespacepp.foreColorWS": {
+					"type": "string",
+					"default": "#606060",
+					"description": "Text color for Wide Space."
+				},
+				"whitespacepp.foreColorLF": {
+					"type": "string",
+					"default": "#604050",
+					"description": "Text color for Line Feed (\\n)."
+				},
+				"whitespacepp.foreColorEOF": {
+					"type": "string",
+					"default": "#008080",
+					"description": "Text color for EOF (End of File)."
+				},
+
+				"whitespacepp.changeBackColorTAB": {
+					"type": "boolean",
+					"default": false,
+					"description": "Check here to change background color for TAB (\\t)."
+				},
+				"whitespacepp.changeBackColorWS": {
+					"type": "boolean",
+					"default": false,
+					"description": "Check here to change background color for Wide Space."
+				},
+				"whitespacepp.changeBackColorLF": {
+					"type": "boolean",
+					"default": false,
+					"description": "Check here to change background color for Line Feed (\\n)."
+				},
+				"whitespacepp.changeBackColorEOF": {
+					"type": "boolean",
+					"default": false,
+					"description": "Check here to change background color for EOF (End of File)."
+				},
+
+				"whitespacepp.backColorTAB": {
+					"type": "string",
+					"default": "#808080",
+					"description": "Background color for TAB (\\t)."
+				},
+				"whitespacepp.backColorWS": {
+					"type": "string",
+					"default": "#808080",
+					"description": "Background color for Wide Space."
+				},
+				"whitespacepp.backColorLF": {
+					"type": "string",
+					"default": "#808080",
+					"description": "Background color for Line Feed (\\n)."
+				},
+				"whitespacepp.backColorEOF": {
+					"type": "string",
+					"default": "#70B090",
+					"description": "Background color for EOF (End of File)."
+				},
+
+				"whitespacepp.renderingDelayMs": {
+					"type": "number",
+					"default": 5,
+					"description": "Rendering delay time in millisecond. Drawing requests with intervals shorter than the delay time will be canceled."
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.46.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}
