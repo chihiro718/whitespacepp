@@ -1,7 +1,7 @@
 {
 	"name": "whitespacepp",
 	"version": "1.0.0",
-    "publisher": "chihiro718",
+	"publisher": "chihiro718",
 	"icon": "images/icon.png",
 	"engines": {
 		"vscode": "^1.46.0"
