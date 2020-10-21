@@ -9,3 +9,4 @@ test/**
 **/*.pspimage
 extension_org.js
 *.vsix
+.svn/**

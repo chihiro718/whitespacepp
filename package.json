@@ -1,10 +1,10 @@
 {
 	"name": "whitespacepp",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "chihiro718",
 	"icon": "images/icon.png",
 	"engines": {
-		"vscode": "^1.46.0"
+		"vscode": "^1.0.0"
 	},
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"displayName": "Whitespace++",
@@ -142,7 +142,7 @@
 		}
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.46.0",
+		"@types/vscode": "^1.0.0",
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^7.0.2",
 		"@types/node": "^13.11.0",
