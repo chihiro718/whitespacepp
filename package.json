@@ -1,6 +1,6 @@
 {
 	"name": "whitespacepp",
-	"version": "1.0.1",
+	"version": "1.1.1",
 	"publisher": "chihiro718",
 	"icon": "images/icon.png",
 	"engines": {
@@ -101,11 +101,6 @@
 					"default": false,
 					"description": "Check here to change background color for Wide Space."
 				},
-				"whitespacepp.changeBackColorLF": {
-					"type": "boolean",
-					"default": false,
-					"description": "Check here to change background color for Line Feed (\\n)."
-				},
 				"whitespacepp.changeBackColorEOF": {
 					"type": "boolean",
 					"default": false,
@@ -122,11 +117,6 @@
 					"default": "#808080",
 					"description": "Background color for Wide Space."
 				},
-				"whitespacepp.backColorLF": {
-					"type": "string",
-					"default": "#808080",
-					"description": "Background color for Line Feed (\\n)."
-				},
 				"whitespacepp.backColorEOF": {
 					"type": "string",
 					"default": "#70B090",
@@ -137,6 +127,12 @@
 					"type": "number",
 					"default": 5,
 					"description": "Rendering delay time in millisecond. Drawing requests with intervals shorter than the delay time will be canceled."
+				},
+
+				"whitespacepp.adjustWidthEOF": {
+					"type": "number",
+					"default": 96,
+					"description": "Adjust background width for EOF rendering in %. Calculated by multiplying the length of `textEOF` by `adjustWidthEOF` and dividing by 100."
 				}
 			}
 		}
