@@ -11,3 +11,6 @@ Fixed the issue where some background drawing settings were not working.<br>Adde
 
 ### 1.1.1
 Edited package.json.
+
+### 1.2.0
+Improved to not render background of TAB and Wide-space in selected area.

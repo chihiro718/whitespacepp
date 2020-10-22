@@ -10,3 +10,4 @@ test/**
 extension_org.js
 *.vsix
 .svn/**
+test.txt

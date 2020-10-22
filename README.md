@@ -64,3 +64,4 @@ None
 |1.0.1|2020.10.21|Changed the VSCode version that the Whitespace++ is compatible with.|
 |1.1.0|2020.10.22|Fixed the issue where some background drawing settings were not working.<br>Added the setting `adjustWidthEOF`.<br>Removed settings  `changeBackColorLF` and `backColorLF`.|
 |1.1.1|2020.10.23|Edited package.json.|
+|1.2.0|2020.10.23|Improved to not render background of TAB and Wide-space in selected area.|
